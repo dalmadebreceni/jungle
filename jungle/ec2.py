@@ -18,7 +18,7 @@ def format_output(instances, flag):
     for i in instances:
         tag_name = get_tag_value(i.tags, 'Name')
         out.append(line_format.format(
-            tag_name, i.state['Name'], i.id, i.private_ip_address, str(i.public_ip_address)))
+            tag_name, i.state['Name'], i.id, str(i.private_ip_address), str(i.public_ip_address)))
     return out
 
 
